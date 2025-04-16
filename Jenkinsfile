@@ -1,13 +1,9 @@
 pipeline {
-    agent {label 'java_slave_node'}
+    agent any
     stages {
         stage('Printing Info') {
             steps {
-                sh '''
-                    uptime
-                    pwd
-                    whoami
-                '''
+                sh 'mvn package'
             }
         }
     }
