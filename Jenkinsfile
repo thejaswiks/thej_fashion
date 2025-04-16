@@ -16,7 +16,7 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 // Run the Docker container
-                sh 'docker run -d -p 8081:8080 thej'
+                sh 'docker run -d -p 8081:8081 thej'
             }
         }
     }
