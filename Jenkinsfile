@@ -1,14 +1,14 @@
-pipeline{
-  agent any
-  stages{
-    stage('printing info')
-    {
-      steps{
-        sh """
-         uptime
-         pwd
-         whoami
-        """
+pipeline {
+    agent any
+    stages {
+        stage('Printing Info') {
+            steps {
+                sh '''
+                    uptime
+                    pwd
+                    whoami
+                '''
+            }
+        }
     }
-  }
 }
